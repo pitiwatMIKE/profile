@@ -5,3 +5,8 @@
 @import "breakpoint";
 
 @import "modules";
+
+.line {
+    height: 2px;
+    background-color: $secondary-color;
+}

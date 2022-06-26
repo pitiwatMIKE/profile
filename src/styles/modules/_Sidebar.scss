@@ -3,11 +3,12 @@
         position: fixed;
         top: 10px;
         left: 10px;
+        z-index: 99;
 
         svg {
             font-size: 0px;
             color: $white-color;
-            background-color: $primary-color;
+            background-color: $secondary-color;
             padding: 7px;
             opacity: 0;
             transition: 1s;
@@ -61,6 +62,7 @@
         position: fixed;
         background-color: $primary-color;
         opacity: 0.3;
+        z-index: 90;
     }
 }
 
