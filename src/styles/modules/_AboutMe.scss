@@ -1,12 +1,11 @@
 .about-me-container {
     $content-margin-top: 90px;
-
     padding-top: 120px;
 
     .about-me-content {
-        // background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         // **fake
-        background-color: green;
+        // background-color: green;
     }
 
     // part 1
@@ -39,6 +38,7 @@
         .full-name {
             font-size: 40px;
             color: $text-primary-color;
+            transition: 2s;
         }
     }
 
@@ -58,6 +58,7 @@
             display: flex;
             justify-content: center;
             grid-gap: 90px;
+            transition: 2s;
 
             ul {
                 padding: 0;
@@ -107,6 +108,7 @@
                 display: flex;
                 align-items: center;
                 grid-gap: 10px;
+                transition: 2s;
             }
 
             img {
@@ -114,6 +116,7 @@
                 border-radius: 50%;
                 width: 50px;
                 height: 50px;
+                transition: 2s;
             }
         }
 
@@ -155,5 +158,86 @@
             }
         }
 
+    }
+}
+
+
+@media screen and(max-width: $breakpoint-md) {
+    .about-me-container {
+
+        // part 1
+        .me {
+
+            .full-name {
+                font-size: 30px;
+            }
+        }
+
+        // part 2
+        .about-me {
+            .personal-information {
+                font-size: 14px;
+                grid-gap: 45px;
+            }
+        }
+
+        // part 3
+        .skill {
+            .tecnical-skill {
+                div {
+                    margin: 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: $breakpoint-sm) {
+    .about-me-container {
+
+        // part 1
+        .me {
+
+            .full-name {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        // part 2
+        .about-me {
+            padding: 2;
+
+            .personal-information {
+                width: 100%;
+                font-size: 11px;
+                grid-gap: 5px;
+            }
+        }
+
+        // part 3
+        .skill {
+            .tecnical-skill {
+                justify-content: space-around;
+                div {
+                    width: 120px;
+                    height: 50px;
+                    // margin: 10px 25px;
+                    // padding: 3px;
+                    // background: rgba(249, 246, 246, 0.263);
+                    // border-radius: 10px;
+                    // display: flex;
+                    // align-items: center;
+                    // grid-gap: 10px;
+                }
+
+                img {
+                    // background-color: $white-color;
+                    // border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
     }
 }
