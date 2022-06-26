@@ -1,0 +1,23 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+p,
+div {
+    margin: 0;
+    padding: 0
+}
+
+.body {
+    position: relative;
+}
+
+.container {
+    max-width: 1080px;
+    background-color: red;
+    margin: 0 auto;
+}

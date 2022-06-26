@@ -1,0 +1,45 @@
+.navbar-container {
+    background-color: $primary-color;
+    color: $text-primary-color;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.7s;
+
+    nav {
+        font-size: 20px;
+        font-weight: 500;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            height: 30px;
+            color: $text-primary-color;
+            text-decoration: none;
+            padding: 4px;
+            border-bottom: 5px solid $primary-color;
+        }
+
+        .active,
+        a:hover {
+            border-bottom: 5px solid $secondary-color;
+        }
+    }
+}
+
+@media screen and(max-width: $breakpoint-sm) {
+    .navbar-container {
+        opacity: 0;
+        height: 0;
+
+        nav {
+            display: none;
+        }   
+
+    }
+
+}
