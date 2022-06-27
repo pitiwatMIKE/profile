@@ -67,7 +67,7 @@ export default function Exprerience() {
           </div>
         </div>
 
-        <div className="gallery-wraper">
+        <div className="gallery-wrapper">
           <h2>GALLERY</h2>
           <div className="gallery">
             <motion.div className="image-item" whileHover={{ scale: 1.05 }}>
