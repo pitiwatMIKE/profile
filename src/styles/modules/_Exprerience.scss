@@ -1,0 +1,208 @@
+.exprerience-container {
+    // **fake
+    background-color: green;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 90px;
+    color: $text-primary-color;
+
+    // part 1
+    .exp-title {
+        background-color: $primary-color;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+
+        h1 {
+            transition: 2s;
+        }
+
+        i {
+            background-color: $secondary-color;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .line {
+            margin: 10px 0;
+        }
+    }
+
+    // part 2
+    .exp-item {
+        background-color: $primary-color;
+        margin-top: 50px;
+        padding: 10px;
+
+        .type {
+            display: flex;
+            align-items: center;
+            grid-gap: 10px;
+
+            i {
+                color: $secondary-color;
+            }
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            grid-gap: 10px;
+
+            a {
+                color: $text-primary-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+
+            i {
+                color: $secondary-color;
+            }
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+
+        .article {
+            margin-top: 30px;
+
+            h2 {
+                color: $secondary-color;
+            }
+
+            a {
+                margin-right: 10px;
+                color: $text-primary-color;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+
+            }
+
+            i {
+                color: $secondary-color;
+            }
+        }
+
+        .gallery-wraper {
+            margin-top: 30px;
+
+            h2 {
+                margin-bottom: 20px;
+                color: $secondary-color;
+            }
+
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                grid-gap: 20px;
+                justify-content: space-around;
+
+                .image-item {
+                    img {
+                        width: 450px;
+                        height: 300px;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 2px;
+                        transition: 2s;
+                    }
+                }
+            }
+        }
+
+        .related-image {
+            margin: 20px 0;
+
+            h2 {
+                color: $secondary-color;
+            }
+
+            a {
+                margin-right: 10px;
+                color: $text-primary-color;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+
+            i {
+                color: $secondary-color;
+            }
+
+        }
+
+    }
+}
+
+
+@media screen and(max-width: $breakpoint-lg) {
+    .exprerience-container {
+        .exp-item {
+
+            .gallery-wraper {
+                .gallery {
+
+                    .image-item {
+                        img {
+                            width: 300px;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: $breakpoint-md) {
+    .exprerience-container {
+        .exp-item {
+
+            .gallery-wraper {
+                .gallery {
+
+                    .image-item {
+                        img {
+                            width: 260px;
+                            height: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: $breakpoint-sm) {
+    .exprerience-container {
+        .exp-title {
+            h1 {
+                font-size: 26px;
+            }
+        }
+
+        .exp-item {
+
+            .gallery-wraper {
+                .gallery {
+
+                    .image-item {
+                        img {
+                            width: 160px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
