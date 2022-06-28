@@ -45,7 +45,6 @@ export default function AboutMePage() {
               <li>
                 <i className="fa-solid fa-angles-right"></i>
                 <span>
-                  {/* **fake */}
                   <strong>Degree:</strong> Bachelor of Engineering
                 </span>
               </li>
@@ -95,11 +94,10 @@ export default function AboutMePage() {
           <div className="line"></div>
 
           <div className="profile-info">
-            {/* **fake */}
-            Molestiae officia non et ut. Quas sit beatae ab est perspiciatis
-            asperiores sit. Fugit dolorum quam quos enim dolores. Accusantium
-            voluptatum vel iusto nam nisi quis atque. Vero vitae laboriosam
-            facilis maiores debitis harum deserunt et sed.
+            I am a recent graduate. I am looking for a job related to web
+            applications with a strong interest in backend development. I have a
+            strong desire to develop my abilities. I'm eager to learn new
+            things, and I expect my skills will support the organization.
           </div>
         </div>
 

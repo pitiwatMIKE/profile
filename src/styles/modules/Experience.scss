@@ -1,8 +1,7 @@
-.exprerience-container {
-    // **fake
-    // background-color: green;
+.experience-container {
     background-color: rgba(0, 0, 0, 0.6);
     padding-top: 90px;
+    margin-bottom: 30px;
     color: $text-primary-color;
 
     // part 1
@@ -67,6 +66,26 @@
             margin-top: 10px;
         }
 
+        .project {
+            margin-top: 20px;
+
+            &>div {
+                padding-left: 20px;
+            }
+
+            h2 {
+                color: $secondary-color;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            a {
+                color: $secondary-color;
+            }
+        }
+
         .article {
             margin-top: 30px;
 
@@ -116,34 +135,12 @@
             }
         }
 
-        .related-image {
-            margin: 20px 0;
-
-            h2 {
-                color: $secondary-color;
-            }
-
-            a {
-                margin-right: 10px;
-                color: $text-primary-color;
-
-                &:hover {
-                    color: $secondary-color;
-                }
-            }
-
-            i {
-                color: $secondary-color;
-            }
-
-        }
-
     }
 }
 
 
 @media screen and(max-width: $breakpoint-lg) {
-    .exprerience-container {
+    .experience-container {
         .exp-item {
 
             .gallery-wrapper {
@@ -163,7 +160,7 @@
 
 
 @media screen and(max-width: $breakpoint-md) {
-    .exprerience-container {
+    .experience-container {
         .exp-item {
 
             .gallery-wrapper {
@@ -183,7 +180,7 @@
 
 
 @media screen and(max-width: $breakpoint-sm) {
-    .exprerience-container {
+    .experience-container {
         .exp-title {
             h1 {
                 font-size: 26px;
